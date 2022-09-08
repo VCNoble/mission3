@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turners</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/198d3bbedd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kalam&family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<header>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="nav__logo">
+            <img src="turners.png" alt="Logo" />
+            <a href="https://www.turners.co.nz/?activetab=carsearch/"></a>
+        </div>
+
+        <ul class="nav__menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul class="nav__icons">
+            <li> <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> </a></li>
+            <li> <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i> </a></li>
+        </ul>
+
+        <a href="#" class="nav__toggleBtn">
+            <i class="fa-solid fa-toggle-off"></i>
+        </a>
+    </nav>
+</header>
+
+<body>
+
+    Cars Turners Subscription Trucks & Machinery Damaged & End of Life Motorcycles General Goods Buses, Caravans &
+    Motorhomes
+
+    <!--Search Bar -->
+    <section class="searchBar" id="search">
+        <div id="gradient"></div>
+        <h2> Make your life easier</h2>
+        <form class="searchBox" action="">
+            <input type="search" placeholder="Search" />
+            <button type="submit" value="search" a href="#" onclick="dict()"><i class="fa fa-search"></i></button>
+        </form>
+        <h4>Get <span>Car Insurance </span> from the car experts.  It’s <span> quick, easy and affordable </span> </h4>
+        <h4>Cover is available for different types and categories of vehicles</h4>
+        <h4> <span>Protect yourself  against unexpected costs </span></h4>
+        </div>
+    </section>
+
+    <!--Javascript-->
+    <script src="app.js" type="text/javascript"></script>
+    <script>
+        function dict() {
+            var x = document.getElementById("search").value; //store search keyword
+            const url = "https://ui.customsearch.ai/hosted-page?customconfig=9da8fdc8-fa3c-4973-a0a1-b7103ca2debe&version=latest&market=en-US&q=";
+            var url1 = url + x
+            var win = window.open(url1, '_blank');
+            win.focus;
+        }
+    </script>
+
+</body>
+
+</html>
